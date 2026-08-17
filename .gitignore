@@ -1,0 +1,28 @@
+# Virtual environment
+ilqrenv/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Test and analysis caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build files
+build/
+dist/
+
+# macOS files
+.DS_Store
+
+# Editor settings
+.vscode/
+.idea/
+
+# Generated results
+results/
+*.mp4

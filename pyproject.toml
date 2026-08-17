@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boxilqr"
+version = "0.1.0"
+description = "Box-constrained iterative Linear Quadratic Regulator with adaptive logarithmic-barrier continuation."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "Abhijeet"}
+]
+dependencies = [
+    "numpy",
+    "scipy"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "matplotlib",
+    "ruff"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
